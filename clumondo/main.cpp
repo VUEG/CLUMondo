@@ -19,6 +19,8 @@
 #include <iostream>
 #include <time.h>
 
+using namespace std;
+
 int main(int argc, char* argv[])
 {
 	if (argc <= 2) {
@@ -30,8 +32,8 @@ int main(int argc, char* argv[])
 	g_argv = argv;
 
 	// Convert command line switches to global state variables
-	strcpy(demd, argv[1]);
-	strcpy(park, argv[2]);
+	std::strcpy(demd, argv[1]);
+	std::strcpy(park, argv[2]);
 
 	if (argc > 3) {
 		if (argv[3] == std::string("1")) {
@@ -68,13 +70,13 @@ int main(int argc, char* argv[])
 		bbar->SimpleText = "select demand";
 	if ((selectcheck == false) && (ParamCount() > 1))
 	{
-		strcpy(demd, ParamStr(1).c_str());
+		std::strcpy(demd, ParamStr(1).c_str());
 		selectcheck = true;
 	}
 	*/
 	/*
 	if (g_argc > 1) {
-		strcpy(demd, argv[1]);
+		std::strcpy(demd, argv[1]);
 		//selectcheck = true;
 	}
 	*/
@@ -92,7 +94,7 @@ int main(int argc, char* argv[])
 			bbar->SimpleText = "select region";
 		if ((selectcheck == false) && (ParamCount() > 1))
 		{
-			strcpy(park, ParamStr(2).c_str());
+			std::strcpy(park, ParamStr(2).c_str());
 			if (ParamCount() > 2)
 			{
 				if (ParamStr(3) == "1")
@@ -118,12 +120,12 @@ int main(int argc, char* argv[])
 		for (int i = 0; i < FileListBox1->Items->Count; i++)	 /* show list of variables in box 1: Area restrictions* /
 		{
 			if (FileListBox1->Selected[i])
-				strcpy(park, FileListBox1->Items->Strings[i].c_str());
+				std::strcpy(park, FileListBox1->Items->Strings[i].c_str());
 		}
 		for (i = 0; i < FileListBox2->Items->Count; i++)		 /* show list of demand files in box 2* /
 		{
 			if (FileListBox2->Selected[i])
-				strcpy(demd, FileListBox2->Items->Strings[i].c_str());
+				std::strcpy(demd, FileListBox2->Items->Strings[i].c_str());
 		}
 	*/
 

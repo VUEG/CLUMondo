@@ -17,6 +17,8 @@
 #include <time.h>
 #include <fstream>
 
+using namespace std;
+
 /*
  * Read main simulation parameters from input file.
  */
@@ -1747,7 +1749,7 @@ void unfinished()
 		}
 		fprintf(ferror, "ERROR REPORT\n\n");
 		fprintf(ferror, "error at: %2d:%02d\n", time_struct.tm_hour, time_struct.tm_min);
-		strcpy(ername, g_argv[0]);
+		std::strcpy(ername, g_argv[0]);
 		fprintf(ferror, "directory of error: %s", ername);
 		fclose(ferror);
 		//Beep(1800, 2800);
