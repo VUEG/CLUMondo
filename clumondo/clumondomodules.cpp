@@ -17,7 +17,6 @@
 #include <time.h>
 #include <fstream>
 
-using namespace std;
 
 /*
  * Read main simulation parameters from input file.
