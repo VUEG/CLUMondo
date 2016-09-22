@@ -14,9 +14,10 @@
 #include "../include/globals.h"
 #include "../include/util.h"
 
+#include <cmath>
+#include <cstring>
 #include <time.h>
 #include <fstream>
-
 
 /*
  * Read main simulation parameters from input file.

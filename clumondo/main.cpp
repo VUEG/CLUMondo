@@ -15,6 +15,7 @@
 #include "../include/clumondomodules.h"
 #include "../include/util.h"
 
+#include <cstring>
 #include <stdlib.h>
 #include <iostream>
 #include <time.h>
