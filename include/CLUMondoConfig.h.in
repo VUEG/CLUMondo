@@ -1,0 +1,9 @@
+#ifndef CLUMONDOCONFIG_H
+#define CLUMONDOCONFIG_H
+
+// the configured options and settings for Tutorial
+#define CLUMondo_VERSION_MAJOR @CLUMondo_VERSION_MAJOR@
+#define CLUMondo_VERSION_MINOR @CLUMondo_VERSION_MINOR@
+#define CLUMondo_VERSION_PATCH @CLUMondo_VERSION_PATCH@
+
+#endif
