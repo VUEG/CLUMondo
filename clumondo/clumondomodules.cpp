@@ -76,8 +76,8 @@ void all_init()
 
 	fprintf(flog, "\n elasticity of land use types: ");
 	for (i = 0; i < rncov; i++) {
-		f1 >> stat[i];                               /* elasticity of land use types*/
-		fprintf(flog, "%3.2f ", stat[i]);
+		f1 >> ltstat[i];                               /* elasticity of land use types*/
+		fprintf(flog, "%3.2f ", ltstat[i]);
 	}
 	fprintf(flog, "\n number of demand types: %d \n weight of demand types: ", rndemand);
 	for (i = 0; i < rndemand; i++) {
@@ -960,13 +960,13 @@ void calc_change_ch()
 					}
 					if (oldcov == i) {
 						// In case the land use system equals the current land use system and changes are allowed
-						// the total probability is the location suitability, iteration variable (=elas) and resistance (=stat)
-						tempmax = (mat_co[i][j][k] + sumelas + stat[i]); 
+						// the total probability is the location suitability, iteration variable (=elas) and resistance (=ltstat)
+						tempmax = (mat_co[i][j][k] + sumelas + ltstat[i]);
 					} else {
 						// In all other cases do not add the resistance because it does not apply
 						tempmax = (mat_co[i][j][k] + sumelas);
 					}
-					//if ((dem_dir[tempreg][i] == -1) && (oldcov != i) && (stat[i] == 1))     // in case of a decreasing demand and 'stability' allocate a very low value to tempmax for all other land use systems
+					//if ((dem_dir[tempreg][i] == -1) && (oldcov != i) && (ltstat[i] == 1))     // in case of a decreasing demand and 'stability' allocate a very low value to tempmax for all other land use systems
 					//        tempmax = -30;
 
 

@@ -122,7 +122,7 @@ extern float
 	demdiff,						// actual difference between demand and allocation
 	lusmatrix[NCOV][NCOV],          // matrix containing the quantities of demand per land use system type
 	elas[NREG][NCOV],				// iteration parameter, based upon break-off value of logistic regression
-	stat[NCOV],						// indicator for behaviour allowed for land use type: 0 = increases and decreases always allowed, 1 = only decraese if decreasing demand, -1 = no increase if decreasing demand, 0-1 = relative staticity for competition among increasing demands; larger: more on decreasing covers
+	ltstat[NCOV],						// indicator for behaviour allowed for land use type: 0 = increases and decreases always allowed, 1 = only decraese if decreasing demand, -1 = no increase if decreasing demand, 0-1 = relative staticity for competition among increasing demands; larger: more on decreasing covers
 	fact[NREG][NCOV][NFACT],        // beta for region, land use type and explanatory factor number
 	fact2[NREG][NCOV][NFACT],
 	gridsize,						// size of grid as used by arcview

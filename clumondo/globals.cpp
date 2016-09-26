@@ -106,7 +106,7 @@ float
 	demdiff,
 	lusmatrix[NCOV][NCOV],
 	elas[NREG][NCOV],
-	stat[NCOV],
+	ltstat[NCOV],
 	fact[NREG][NCOV][NFACT],
 	fact2[NREG][NCOV][NFACT],
 	gridsize,
