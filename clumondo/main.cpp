@@ -269,6 +269,9 @@ int main(int argc, char* argv[])
 						calc_reg();
 					}
 				}
+                std::cout << "totdiff: " << totdiff << std::endl;
+                std::cout << "rndemand: " << rndemand << std::endl;
+                std::cout << "demdiff: " << demdiff << std::endl;
 			} while ((((totdiff / (rndemand)) > demdiff) && (loop < 20000)) || ((loop < 20000) && (maxdiff > demdiffmax)));   /* end of loop for iteration of allocation on demand */
 
 			if ((loop < 20000) && (bottomup == 1)) {
