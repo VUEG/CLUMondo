@@ -17,6 +17,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisities
 
+**NOTE**: currently CLUMondo reliably rund only on 32-bit Windows.
+
 CLUMondo is built using pure `std` libraries. For building CLUMondo from source, you will need the following packages:
 
 #### Linux
@@ -34,14 +36,6 @@ CLUMondo uses [CMake](https://cmake.org/) to genrerate the needed build files on
 cmake .
 make
 ```
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VUEG/CLUMondo/tags). 
 
 ## Authors
 
