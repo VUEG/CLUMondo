@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisities
 
-**NOTE**: currently CLUMondo reliably rund only on 32-bit Windows.
+**NOTE**: currently CLUMondo reliably runs only on 32-bit Windows.
 
 CLUMondo is built using pure `std` libraries. For building CLUMondo from source, you will need the following packages:
 
